@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- JS -->
+  <script src="assets/js/main.js" type="module" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- LOGO -->
+  <link rel="shortcut icon" href="assets/img/paleta de color y logo-06.png" type="image/x-icon">
+  <title>Maxi Shop</title>
+</head>
+<body>
+
+  <!-- loader -->
+  <div class="loader">
+    <picture class="container__loader logo--loader">
+      <img src="assets/img/paleta de color y logo-06.png">
+    </picture>
+  </div>
+
+  <!-- Carrusel -->
+  <div class="carrusel"></div>
+
+  <!-- HEADER Menu of the page -->
+  <header class="header">    
+    <nav class="nav header__menu container ">
+      <a href="./"><img class="logo header__logo" src="assets/img/paleta de color y logo-07.png" alt="Logo de la pagina"></a>
+      <div class="header__list__menu ">
+        <button type="button" class="nav__btn btn--close">
+          <i class='bx bx-x'></i>
+        </button>
+        <ul class="list__menu">
+          <li class="list__item">
+            <a href="#" class="home list--menu"> Inicio</a>
+          </li>        
+          <li class="list__item">
+            <a href="assets/html/micuenta.html" class="login__user list--menu"> Mi Usuario</a>
+          </li>          
+          <li class="list__item">
+            <a href="#" class="discount list--menu"> Descuentos</a>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="container__icons">
+          <div class="search__bar ">
+            <input type="text" placeholder=" Buscar" name="search" class="search--bar">
+            <button type="button" class="search">
+              <i class='bx bx-search-alt'></i>
+            </button>
+          </div>
+          <button type="button" class="button__menu btn--search">
+            <i class='bx bx-search-alt'></i>
+          </button>
+          <button type="button" class="button__menu btn--menu">
+            <i class='bx bx-grid-alt'></i>
+          </button>
+          <button type="button" class="button__menu btn--bag">
+            <i class='bx bx-shopping-bag'></i>
+            <span class="notify"></span>
+          </button>  
+          <button type="button" class="switch">
+            <span><i class='bx bxs-moon'></i></span>
+            <span><i class='bx bxs-sun'></i></span>
+          </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal´s of the page -->
+
+<dialog class="modal__stock modal__container">
+  <button type="button" class="btn__modal__close">
+    <i class='bx bx-x'></i>
+  </button>
+  <h2 class="title__modal"></h2>
+  <p class="text__modal">No hay Stock Disponible</p>
+  <button type="button" class="btn__modal">Aceptar</button>
+</dialog>
+
+<dialog class="modal__cart__empty modal__container">
+  <button type="button" class="btn__modal__close btn--modal--card">
+    <i class='bx bx-x'></i>
+  </button>
+  <h2 class="title__modal"></h2>
+  <p class="text__modal">No hay Artículos en el carrito</p>
+  <button type="button" class="btn__modal btn--modal--card--accept">Aceptar</button>
+</dialog>
+
+<dialog class="modal__checkout modal__container">
+  <button type="button" class="btn__modal__close btn--modal--checkout">
+    <i class='bx bx-x'></i>
+  </button>
+  <h2 class="title__modal"></h2>
+  <p class="text__modal">Gracias por su compra</p>
+  <button type="button" class="btn__modal btn--modal--checkout--accept">Aceptar</button>
+</dialog>
+
+<dialog class="modal__description modal__container">
+  <button type="button" class="btn__modal__close btn__description">
+    <i class='bx bx-x'></i>
+  <div class="description__container"></div>  
+</dialog>
+
+
+
+
+  <!-- MAIN Products of the page -->
+  <main class="main">
+    <section class="products section">
+      <h1 class="products__title section--title">Productos</h1>
+      <div class="products__container container"></div>
+    </section>
+  </main>
+  
+  <!-- CART -->
+  <div class="cart">
+    <div class="cart__container">
+      <div class="cart__header">
+        <h3 class="cart__title">Carrito de Compras</h3>
+        <button type="button" class="cart__btn btn--close">
+          <i class='bx bx-x'></i>
+        </button>
+      </div>
+      <div class="cart__body"></div>
+      <div class="cart__footer">
+        <div class="cart__count">
+          <span class="cart__count--text">Articulos</span>
+          <span class="cart__count--item">0</span>
+        </div>
+        <div class="cart__total">
+          <span class="cart__count--text">Total $</span>
+          <span class="cart__total--item">$0</span>
+        </div>
+        <button type="button" class="cart__btn--buy">
+          Comprar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER of the page -->
+  <footer class="footer section">
+    <div class="footer__container container">
+      <div class="footer__top">
+        <div class="footer__left">
+          <h3 class="footer__title">Sobre Mi</h3>
+          <p class="footer__text">Mi nombre es Steven Contreras, tengo 27 años, en este proyecto se puede observar mi dedicación y esfuerzo en mejorar mi codigo día a día </p>
+        </div>
+        <div class="footer__rigth">
+          <h3 class="footer__title">Redes Sociales</h3>
+          <ul class="footer__social">
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <i class='bx bxl-github' style='color:#ffffff' ></i>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <i class='bx bxl-linkedin' style='color:#ffffff' ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__bottom__text footer--text"><i class='bx bx-copyright'></i>Copyright By Steven Contreras. Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

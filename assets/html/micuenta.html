@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Talleres/E-commerce-proyecto-1/assets/css/styles.css">
+  <!-- JS -->
+  <script src="/Talleres/E-commerce-proyecto-1/assets/js/helpers/logout.js" defer type="module"></script>
+  <!-- LOGO -->
+  <link rel="shortcut icon" href="/Talleres/E-commerce-proyecto-1/assets/img/paleta de color y logo-06.png" type="image/x-icon">
+  <title>Mi cuenta</title>
+</head>
+<body>
+  <!-- MAIN -->
+
+  <div class="container__user">
+    <div class="container__info__user">
+     <p class="user__info">Usuario</p>
+     <span class="user__data">Usuario DATA</span>
+     <p class="user__info">Contraseña</p>
+     <span class="user__data">Contraseña DATA</span>
+     <p class="user__info">Correo</p>
+     <span class="user__data">Correo DATA</span>
+    </div>
+    <div class="btn__user">
+      <button type="button" id="logout" class="logout index link__log--reg">Cerrar Sesión</button>
+      <a class="index " href="/Talleres/E-commerce-proyecto-1/index.html">Volver</a>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+
+  <dialog class="modal__logout modal__container">
+    <button type="button" class="btn__modal__close btn__modal__logout">
+      <i class='bx bx-x'></i>
+    </button>
+    <p class="text__modal">Hasta Luego</p>
+    <button type="button" class="btn__modal btn__modal__logout__accept">Aceptar</button>
+  </dialog>
+  
+  
+</body>
+</html>

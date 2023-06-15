@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Talleres/E-commerce-proyecto-1/assets/css/styles.css">
+  <!-- JS -->
+  <script src="/Talleres/E-commerce-proyecto-1/assets/js/helpers/register.js" defer type="module"></script>
+  <!-- LOGO -->
+  <link rel="shortcut icon" href="/Talleres/E-commerce-proyecto-1/assets/img/paleta de color y logo-06.png" type="image/x-icon">
+  <title>Registro</title>
+</head>
+<body>
+  <section class="container__register container__info">
+    <h1 class="title__log--reg">Registra tu Cuenta</h1>
+    <form id="register__Form">
+      <label class="text__info text__register">Usuario</label>
+      <input class="input input__register" type="text" placeholder="Nombre y Apellido" id="name" required autofocus>
+      <label class="text__info text__register">Correo</label>
+      <input class="input input__register" type="email" placeholder="ejemplo@mail.com" id="email" required>
+      <label class="text__info text__register">Contraseña</label>
+      <input class="input input__register" type="password" placeholder="*********" id="password" required>
+      <input type="submit" value="Registro" class="register btn__submit">
+    </form>
+    <p class="text__info text__register">¿Ya tienes una cuenta? <a class="link__log--reg link__register"  href="login.html">Inicia Sesión</a></p>
+  </section>
+
+  <!-- MODALS -->
+
+  <dialog class="modal__register__error modal__container">
+    <button type="button" class="btn__modal__close btn__modal__register__error">
+      <i class='bx bx-x'></i>
+    </button>
+    <p class="text__modal">El usuario ya esta Registrado</p>
+    <button type="button" class="btn__modal btn__modal__register__error__accept">Aceptar</button>
+  </dialog>
+
+  <dialog class="modal__register modal__container">
+    <button type="button" class="btn__modal__close btn__modal__register">
+      <i class='bx bx-x'></i>
+    </button>
+    <p class="text__modal">Registro Exitoso!!!</p>
+    <button type="button" class="btn__modal btn__modal__register__accept">Aceptar</button>
+  </dialog>
+
+</body>
+</html>
