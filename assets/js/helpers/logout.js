@@ -13,14 +13,14 @@ const modalAcceptlogout = document.querySelector('.btn__modal__logout__accept')
 modalCloselogout.addEventListener('click', (e) => {
   if (e.target.closest('.btn__modal__logout')) {
     modallogout.close()
-    window.location.href = '/Talleres/E-commerce-proyecto-1/assets/html/login.html'
+    window.location.href = './../../html/login.html'
   }   
 })
 
 modalAcceptlogout.addEventListener('click', (e) => {
   if (e.target.closest('.btn__modal__logout__accept')) {
     modallogout.close()
-    window.location.href = '/Talleres/E-commerce-proyecto-1/assets/html/login.html'
+    window.location.href = './../../html/login.html'
   }
 })
 
@@ -49,7 +49,7 @@ function account () {
     userDOM.innerHTML = accountDOM
         
   } else {
-    window.location.href = '/Talleres/E-commerce-proyecto-1/assets/html/login.html' 
+    window.location.href = './../../html/login.html' 
   }
 }
 
