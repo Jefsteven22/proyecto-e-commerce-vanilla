@@ -43,13 +43,13 @@ const modalAcceptRegister = document.querySelector('.btn__modal__register__accep
 modalCloseRegister.addEventListener('click', (e) => {
   if (e.target.closest('.btn__modal__register')) {
     modalRegister.close()
-    window.location.href = 'login.html'
+    window.location.href = '/assets/html/login.html'
   }   
 })
 
 modalAcceptRegister.addEventListener('click', (e) => {
   if (e.target.closest('.btn__modal__register__accept')) {
     modalRegister.close()
-    window.location.href = 'login.html'
+    window.location.href = '/assets/html/login.html'
   }
 })

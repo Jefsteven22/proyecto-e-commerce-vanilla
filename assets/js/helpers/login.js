@@ -45,14 +45,14 @@ loginForm.addEventListener('submit', (e) => {
   modalCloseLogin.addEventListener('click', (e) => {
     if (e.target.closest('.btn__modal__login')) {
       modalLogin.close()
-      window.location.href = './../../../index.html'
+      window.location.href = '/index.html'
     }   
   })
 
   modalAcceptLogin.addEventListener('click', (e) => {
     if (e.target.closest('.btn__modal__login__accept')) {
       modalLogin.close()
-      window.location.href = './../../../index.html'
+      window.location.href = '/index.html'
     }
   })
 

@@ -13,14 +13,14 @@ const modalAcceptlogout = document.querySelector('.btn__modal__logout__accept')
 modalCloselogout.addEventListener('click', (e) => {
   if (e.target.closest('.btn__modal__logout')) {
     modallogout.close()
-    window.location.href = './../../html/login.html'
+    window.location.href = '/assets/html/login.html'
   }   
 })
 
 modalAcceptlogout.addEventListener('click', (e) => {
   if (e.target.closest('.btn__modal__logout__accept')) {
     modallogout.close()
-    window.location.href = './../../html/login.html'
+    window.location.href = '/assets/html/login.html'
   }
 })
 
@@ -43,13 +43,13 @@ function account () {
     </div>
     <div class="btn__user">
       <button type="button" id="logout" class="logout index link__log--reg">Cerrar Sesión</button>
-      <a class="index " href="/Talleres/E-commerce-proyecto-1/index.html">Volver</a>
+      <a class="index " href="/index.html">Volver</a>
     </div>
     `
     userDOM.innerHTML = accountDOM
         
   } else {
-    window.location.href = './../../html/login.html' 
+    window.location.href = '/assets/html/login.html' 
   }
 }
 
